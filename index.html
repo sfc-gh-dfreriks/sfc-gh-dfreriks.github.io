@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>SAP + Snowflake demos · Dave Freriks</title>
+<meta name=description content="Public SAP and Snowflake demo applications: SAP BDC 360 apps, manufacturing use cases and ontology explorers.">
+<link rel=icon href="img/snowflake_logo.svg">
+<link rel=stylesheet href="style.css">
+</head>
+<body>
+<header class=hero>
+  <div class=wrap>
+    <div class=brand><img src="img/snowflake_logo.svg" alt="Snowflake" class=logo><span>SAP + Snowflake demos</span></div>
+    <h1>Public demo applications</h1>
+    <p>Working demos of SAP data on Snowflake: SAP Business Data Cloud 360 apps, portable manufacturing use cases and
+    catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
+    <nav><a href="#sap360">SAP Business Data Cloud 360 apps</a><a href="#mfg">Manufacturing use cases</a><a href="#explore">Ontologies and explorers</a></nav>
+  </div>
+</header>
+<main class=wrap>
+  <section id=sap360>
+    <h2>SAP Business Data Cloud 360 apps</h2>
+    <p class=lead>Full applications over SAP BDC data products shared zero-copy into Snowflake: medallion SQL, a semantic view, a Cortex Agent and a React app. Each also ships as a Snowflake Native App.</p>
+    <div class=grid>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/finance-360-public/" target=_blank rel=noopener><img src="img/finance-360-public.jpg" alt="Finance 360 screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/finance-360-public/" target=_blank rel=noopener>Finance 360</a></h3>
+          <p>Live, AI-powered finance analytics from SAP BDC standard data products, with Ask Cortex on every page and a Cortex Agent in Snowflake Intelligence.</p>
+          <p class=pages><b>9 pages:</b> Ask Cortex · Executive Dashboard · General Ledger · Cost Centers · Profit Centers · Accounts Payable · Accounts Receivable · Period Analysis · BDC Sources &amp; Lineage</p>
+          <div class=tags><span class=tag>SAP BDC</span><span class=tag>Cortex Agent</span><span class=tag>Native App</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/finance-360-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/sap-bdc-finance-360" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/sales-360-public/" target=_blank rel=noopener><img src="img/sales-360-public.jpg" alt="Sales 360 screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/sales-360-public/" target=_blank rel=noopener>Sales 360</a></h3>
+          <p>Sales and CRM analytics from SAP BDC standard data products, with Ask Cortex on every page and a Cortex Agent in Snowflake Intelligence.</p>
+          <p class=pages><b>8 pages:</b> Ask Cortex · Executive Dashboard · Sales Funnel · Customer Health · Products · Rep Leaderboard · Sales Forecast · BDC Sources &amp; Lineage</p>
+          <div class=tags><span class=tag>SAP BDC</span><span class=tag>Cortex Agent</span><span class=tag>Native App</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/sales-360-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/sap-bdc-sales-360" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/spend-360-public/" target=_blank rel=noopener><img src="img/spend-360-public.jpg" alt="Spend 360 screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/spend-360-public/" target=_blank rel=noopener>Spend 360</a></h3>
+          <p>Spend intelligence from SAP BDC standard data products: procurement and supplier spend, with Ask Cortex on every page and a Cortex Agent in Snowflake Intelligence.</p>
+          <p class=pages><b>10 pages:</b> Ask Cortex · Executive Dashboard · Categories · Suppliers · Supplier Risk · Sustainability &amp; Diversity · Savings Pipeline · Contract Compliance · Purchase Orders · BDC Sources &amp; Lineage</p>
+          <div class=tags><span class=tag>SAP BDC</span><span class=tag>Cortex Agent</span><span class=tag>Native App</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/spend-360-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/sap-bdc-spend-360" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/people-360-public/" target=_blank rel=noopener><img src="img/people-360-public.jpg" alt="People 360 screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/people-360-public/" target=_blank rel=noopener>People 360</a></h3>
+          <p>Workforce analytics from SAP BDC standard data products, with Ask Cortex on every page and a Cortex Agent in Snowflake Intelligence.</p>
+          <p class=pages><b>13 pages:</b> Ask Cortex · Executive Dashboard · Headcount · Diversity &amp; Inclusion · Compensation · Attrition · Performance · Learning · Recruiting · Onboarding Scenario · Org &amp; Span · Employees · BDC Sources &amp; Lineage</p>
+          <div class=tags><span class=tag>SAP BDC</span><span class=tag>Cortex Agent</span><span class=tag>Native App</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/people-360-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/sap-bdc-people-360" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/supply-chain-360-public/" target=_blank rel=noopener><img src="img/supply-chain-360-public.jpg" alt="Supply Chain 360 screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/supply-chain-360-public/" target=_blank rel=noopener>Supply Chain 360</a></h3>
+          <p>Supply-chain analytics from SAP BDC standard data products, with Ask Cortex on every page and a Cortex Agent in Snowflake Intelligence.</p>
+          <p class=pages><b>16 pages:</b> Ask Cortex · Executive Dashboard · Production Planning · Bill of Materials · Inventory &amp; Warehouse · Logistics &amp; Delivery · Fulfillment &amp; Constraints · Equipment Health · Components &amp; Digital Thread · Work Center &amp; Capacity · Project Management · Supply Chain Map · Supply Chain Ontology · SC Optimization · SC Forecasting · BDC Sources &amp; Lineage</p>
+          <div class=tags><span class=tag>SAP BDC</span><span class=tag>Cortex Agent</span><span class=tag>Native App</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/supply-chain-360-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/sap-bdc-supply-chain-360" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/working-capital-360-public/" target=_blank rel=noopener><img src="img/working-capital-360-public.jpg" alt="Working Capital 360 screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/working-capital-360-public/" target=_blank rel=noopener>Working Capital 360</a></h3>
+          <p>Cash conversion from SAP BDC data products: DSO, DPO, DIO and the cash conversion cycle, AR and AP, cash and liquidity, early payment and supply chain finance, and inventory.</p>
+          <p class=pages><b>9 pages:</b> Ask Cortex · Executive Dashboard · Cash &amp; Liquidity · Accounts Receivable · Accounts Payable · Early Payment &amp; SCF · Inventory · WC Opportunities · BDC Sources &amp; Lineage</p>
+          <div class=tags><span class=tag>SAP BDC</span><span class=tag>Cortex Agent</span><span class=tag>Native App</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/working-capital-360-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/sap-bdc-working-capital-360" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id=mfg>
+    <h2>Manufacturing use cases</h2>
+    <p class=lead>Portable apps on the mfg-use-cases framework: any SAP (ECC, S/4HANA, BW or BDC) plus non-SAP sources, spec-generated dbt adapters, gold dynamic tables, a semantic view and a Cortex Agent.</p>
+    <div class=grid>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-order-to-cash-public/" target=_blank rel=noopener><img src="img/mfg-order-to-cash-public.jpg" alt="Orders to Cash screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-order-to-cash-public/" target=_blank rel=noopener>Orders to Cash</a></h3>
+          <p>Quote to cash across SAP and Salesforce CPQ, carrier tracking, AR automation and bank statements: OTIF, DSO against best possible, CEI, disputes by root cause, cash application and Customer 360.</p>
+          <p class=pages><b>14 pages:</b> Ask Cortex · Executive Dashboard · Order Book &amp; Quotes · Fulfillment &amp; OTIF · Billing · Receivables &amp; DSO · Collections &amp; Disputes · Cash Application · Customer 360 · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>Non-SAP sources</span><span class=tag>dbt</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-order-to-cash-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-multi-erp-spend-public/" target=_blank rel=noopener><img src="img/mfg-multi-erp-spend-public.jpg" alt="Multi-ERP Spend &amp; Supplier Risk screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-multi-erp-spend-public/" target=_blank rel=noopener>Multi-ERP Spend &amp; Supplier Risk</a></h3>
+          <p>One spend and supplier-risk view across two SAP instances and acquired Oracle EBS, Dynamics 365, NetSuite and Coupa: supplier golden record, price variance by plant, risk and a supplier optimization model.</p>
+          <p class=pages><b>14 pages:</b> Ask Cortex · Executive Dashboard · Spend by Supplier · Price Variance Across Plants · Supplier Risk · Supplier Optimization · Contracts &amp; Maverick Spend · 3-Way Match &amp; Payments · Supplier Golden Record · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>Non-SAP ERPs</span><span class=tag>dbt</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-multi-erp-spend-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id=explore>
+    <h2>Ontologies and explorers</h2>
+    <p class=lead>Browse the SAP BDC catalog and the knowledge graphs that tie the 360 apps together.</p>
+    <div class=grid>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/enterprise-ontology/" target=_blank rel=noopener><img src="img/enterprise-ontology.jpg" alt="Enterprise Ontology screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/enterprise-ontology/" target=_blank rel=noopener>Enterprise Ontology</a></h3>
+          <p>The master ontology across six SAP BDC 360 apps on Snowflake: the business entities they share and the graph that links them.</p>
+          <p class=pages><b>13 pages:</b> Ask Cortex · Executive Dashboard · Management Use Cases · Enterprise Scenario Studio · Impact Map · Risk Outcome · Mitigation &amp; Recovery · Master Ontology Model · Customer 360 · Supplier 360 · Golden-Record Crosswalk · Enterprise Graph · BDC Lineage</p>
+          <div class=tags><span class=tag>Ontology</span><span class=tag>Knowledge graph</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/enterprise-ontology/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/enterprise-ontology" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/supply-chain-ontology/" target=_blank rel=noopener><img src="img/supply-chain-ontology.jpg" alt="Supply Chain Ontology screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/supply-chain-ontology/" target=_blank rel=noopener>Supply Chain Ontology</a></h3>
+          <p>Ontology explorer for the supply-chain slice of the SAP BDC catalog: 36 data products and 338 CDS entities, with graph traversal and Cortex Analyst.</p>
+          <p class=pages><b>15 pages:</b> Ask Cortex · Executive Dashboard · Ontology Model · SAP BDC Catalog · Graph Traversal · Digital Thread · Business Processes · Use Cases / Insight Apps · Correlation · Coverage &amp; Scorecard · Guided Demo · Scenario Studio · Ripple Map · Mitigation · Optimization Map</p>
+          <div class=tags><span class=tag>Ontology</span><span class=tag>Cortex Analyst</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/supply-chain-ontology/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/supply-chain-ontology" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/sap-bdc-data-products/" target=_blank rel=noopener><img src="img/sap-bdc-data-products.jpg" alt="SAP BDC Data Products screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/sap-bdc-data-products/" target=_blank rel=noopener>SAP BDC Data Products</a></h3>
+          <p>Interactive explorer for the SAP Business Data Cloud data product portfolio, mined from the public SAP Business Accelerator Hub catalog.</p>
+          <p class=pages><b>9 pages:</b> Portfolio Overview · Data Product Explorer · CDS Entity Browser · Data Product Tree · Ontology Graph · Business Processes · Use Cases / Insight Apps · Correlation · Coverage &amp; Scorecard</p>
+          <div class=tags><span class=tag>SAP BDC</span><span class=tag>Catalog</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/sap-bdc-data-products/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/sap-bdc-data-products" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <p class=note>All data in these demos is synthetic or representative; company, customer and supplier names are fictional.
+  Each public site is a read-only static snapshot of an application that runs live on Snowflake.</p>
+</main>
+<footer><div class=wrap>Dave Freriks · Snowflake · <a href="https://github.com/sfc-gh-dfreriks">github.com/sfc-gh-dfreriks</a> · updated 03 November 2026</div></footer>
+</body>
+</html>
