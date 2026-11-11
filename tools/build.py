@@ -32,6 +32,9 @@ SECTIONS = [
      "Browse the SAP BDC catalog and the knowledge graphs that tie the 360 apps together."),
 ]
 
+# Shorter names for the tab bar.
+TAB_LABEL = {"sap360": "SAP BDC 360", "mfg": "Manufacturing", "oge": "Oil, Gas & Energy", "explore": "Ontologies & explorers"}
+
 # (section, site repo, title, description, tags, source repo)
 DEMOS = [
     ("sap360", "finance-360-public", "Finance 360",
@@ -153,7 +156,9 @@ def page():
 {cards}
     </div>
   </section>""")
-    nav = "".join(f'<a href="#{k}">{html.escape(n)}</a>' for k, n, _ in SECTIONS)
+    count = {k: sum(1 for d in DEMOS if d[0] == k) for k, _, _ in SECTIONS}
+    tab = lambda k, n, c: f'<a class=tab href="#{k}" data-tab="{k}">{html.escape(n)}<span>{c}</span></a>'
+    tabs = tab("all", "All", len(DEMOS)) + "".join(tab(k, TAB_LABEL.get(k, n), count[k]) for k, n, _ in SECTIONS)
     return f"""<!doctype html>
 <html lang=en>
 <head>
@@ -171,14 +176,25 @@ def page():
     <h1>Public demo applications</h1>
     <p>Working demos of SAP data on Snowflake: SAP Business Data Cloud 360 apps, portable manufacturing and oil, gas and
     energy use cases, and catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
-    <nav>{nav}</nav>
   </div>
 </header>
+<nav class=tabs aria-label="Demo groups"><div class=wrap>{tabs}</div></nav>
 <main class=wrap>
 {chr(10).join(sections)}
   <p class=note>All data in these demos is synthetic or representative; company, customer and supplier names are fictional.
   Each public site is a read-only static snapshot of an application that runs live on Snowflake.</p>
 </main>
+<script>
+// Tabs: show one group (or all). The hash keeps the choice shareable; without JavaScript every group shows.
+const tabs = document.querySelectorAll(".tab"), groups = document.querySelectorAll("main section");
+function show(key) {{
+  if (![...tabs].some((t) => t.dataset.tab === key)) key = "all";
+  tabs.forEach((t) => t.classList.toggle("on", t.dataset.tab === key));
+  groups.forEach((g) => (g.hidden = key !== "all" && g.id !== key));
+}}
+tabs.forEach((t) => t.addEventListener("click", (e) => {{ e.preventDefault(); history.replaceState(null, "", "#" + t.dataset.tab); show(t.dataset.tab); }}));
+show(location.hash.slice(1));
+</script>
 <footer><div class=wrap>Dave Freriks · Snowflake · <a href="https://github.com/sfc-gh-dfreriks">github.com/sfc-gh-dfreriks</a> · updated {dt.date.today():%d %B %Y}</div></footer>
 </body>
 </html>

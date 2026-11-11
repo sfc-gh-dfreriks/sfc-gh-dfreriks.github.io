@@ -15,9 +15,9 @@
     <h1>Public demo applications</h1>
     <p>Working demos of SAP data on Snowflake: SAP Business Data Cloud 360 apps, portable manufacturing and oil, gas and
     energy use cases, and catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
-    <nav><a href="#sap360">SAP Business Data Cloud 360 apps</a><a href="#mfg">Manufacturing use cases</a><a href="#oge">Oil, Gas &amp; Energy use cases</a><a href="#explore">Ontologies and explorers</a></nav>
   </div>
 </header>
+<nav class=tabs aria-label="Demo groups"><div class=wrap><a class=tab href="#all" data-tab="all">All<span>18</span></a><a class=tab href="#sap360" data-tab="sap360">SAP BDC 360<span>6</span></a><a class=tab href="#mfg" data-tab="mfg">Manufacturing<span>3</span></a><a class=tab href="#oge" data-tab="oge">Oil, Gas &amp; Energy<span>6</span></a><a class=tab href="#explore" data-tab="explore">Ontologies &amp; explorers<span>3</span></a></div></nav>
 <main class=wrap>
   <section id=sap360>
     <h2>SAP Business Data Cloud 360 apps</h2>
@@ -226,6 +226,17 @@
   <p class=note>All data in these demos is synthetic or representative; company, customer and supplier names are fictional.
   Each public site is a read-only static snapshot of an application that runs live on Snowflake.</p>
 </main>
+<script>
+// Tabs: show one group (or all). The hash keeps the choice shareable; without JavaScript every group shows.
+const tabs = document.querySelectorAll(".tab"), groups = document.querySelectorAll("main section");
+function show(key) {
+  if (![...tabs].some((t) => t.dataset.tab === key)) key = "all";
+  tabs.forEach((t) => t.classList.toggle("on", t.dataset.tab === key));
+  groups.forEach((g) => (g.hidden = key !== "all" && g.id !== key));
+}
+tabs.forEach((t) => t.addEventListener("click", (e) => { e.preventDefault(); history.replaceState(null, "", "#" + t.dataset.tab); show(t.dataset.tab); }));
+show(location.hash.slice(1));
+</script>
 <footer><div class=wrap>Dave Freriks · Snowflake · <a href="https://github.com/sfc-gh-dfreriks">github.com/sfc-gh-dfreriks</a> · updated 11 November 2026</div></footer>
 </body>
 </html>

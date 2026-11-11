@@ -8,9 +8,14 @@ a { color:var(--navy); }
 .logo { height:30px; }
 .hero h1 { font-size:40px; margin:22px 0 8px; }
 .hero p { max-width:760px; font-size:17px; opacity:.92; margin:0; }
-.hero nav { margin-top:22px; display:flex; flex-wrap:wrap; gap:10px; }
-.hero nav a { color:#fff; text-decoration:none; border:1px solid rgba(255,255,255,.45); border-radius:999px; padding:6px 14px; font-size:14px; }
-.hero nav a:hover { background:rgba(255,255,255,.15); }
+.tabs { position:sticky; top:0; z-index:5; background:rgba(255,255,255,.96); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+.tabs .wrap { display:flex; gap:6px; overflow-x:auto; padding-top:10px; padding-bottom:10px; }
+.tab { flex:none; color:var(--navy); text-decoration:none; font-size:14px; font-weight:600; padding:7px 14px; border-radius:999px; border:1px solid var(--line); background:#fff; white-space:nowrap; }
+.tab span { margin-left:7px; font-size:12px; font-weight:600; color:var(--grey); background:var(--bg); border-radius:999px; padding:1px 7px; }
+.tab:hover { border-color:var(--blue); }
+.tab.on { background:var(--navy); border-color:var(--navy); color:#fff; }
+.tab.on span { background:rgba(255,255,255,.2); color:#fff; }
+section[hidden] { display:none; }
 section { padding:34px 0 6px; scroll-margin-top:12px; }
 h2 { color:var(--navy); font-size:26px; margin:0 0 4px; }
 .lead { color:var(--grey); margin:0 0 20px; max-width:860px; }
