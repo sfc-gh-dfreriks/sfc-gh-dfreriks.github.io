@@ -4,7 +4,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width, initial-scale=1">
 <title>SAP + Snowflake demos · Dave Freriks</title>
-<meta name=description content="Public SAP and Snowflake demo applications: SAP BDC 360 apps, manufacturing use cases and ontology explorers.">
+<meta name=description content="Public SAP and Snowflake demo applications: SAP BDC 360 apps, manufacturing and oil, gas and energy use cases, and ontology explorers.">
 <link rel=icon href="img/snowflake_logo.svg">
 <link rel=stylesheet href="style.css">
 </head>
@@ -13,9 +13,9 @@
   <div class=wrap>
     <div class=brand><img src="img/snowflake_logo.svg" alt="Snowflake" class=logo><span>SAP + Snowflake demos</span></div>
     <h1>Public demo applications</h1>
-    <p>Working demos of SAP data on Snowflake: SAP Business Data Cloud 360 apps, portable manufacturing use cases and
-    catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
-    <nav><a href="#sap360">SAP Business Data Cloud 360 apps</a><a href="#mfg">Manufacturing use cases</a><a href="#explore">Ontologies and explorers</a></nav>
+    <p>Working demos of SAP data on Snowflake: SAP Business Data Cloud 360 apps, portable manufacturing and oil, gas and
+    energy use cases, and catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
+    <nav><a href="#sap360">SAP Business Data Cloud 360 apps</a><a href="#mfg">Manufacturing use cases</a><a href="#oge">Oil, Gas &amp; Energy use cases</a><a href="#explore">Ontologies and explorers</a></nav>
   </div>
 </header>
 <main class=wrap>
@@ -94,7 +94,7 @@
         <div class=body>
           <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-order-to-cash-public/" target=_blank rel=noopener>Orders to Cash</a></h3>
           <p>Quote to cash across SAP and Salesforce CPQ, carrier tracking, AR automation and bank statements: OTIF, DSO against best possible, CEI, disputes by root cause, cash application and Customer 360.</p>
-          <p class=pages><b>14 pages:</b> Ask Cortex · Executive Dashboard · Order Book &amp; Quotes · Fulfillment &amp; OTIF · Billing · Receivables &amp; DSO · Collections &amp; Disputes · Cash Application · Customer 360 · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <p class=pages><b>15 pages:</b> Ask Cortex · Executive Dashboard · Order Book &amp; Quotes · Fulfillment &amp; OTIF · Shipments in Motion · Billing · Receivables &amp; DSO · Collections &amp; Disputes · Cash Application · Customer 360 · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
           <div class=tags><span class=tag>Any SAP</span><span class=tag>Non-SAP sources</span><span class=tag>dbt</span><span class=tag>Cortex</span></div>
           <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-order-to-cash-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
         </div>
@@ -117,6 +117,72 @@
           <p class=pages><b>15 pages:</b> Ask Cortex · Executive Dashboard · Requisitions &amp; Sourcing · POs &amp; Contract Compliance · Supplier Delivery · Invoices &amp; 3-Way Match · Exceptions &amp; Holds · Payables &amp; DPO · Payments &amp; Discounts · Supplier 360 &amp; Risk · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
           <div class=tags><span class=tag>Any SAP</span><span class=tag>Non-SAP sources</span><span class=tag>dbt</span><span class=tag>Cortex</span></div>
           <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-procure-to-pay-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id=oge>
+    <h2>Oil, Gas &amp; Energy use cases</h2>
+    <p class=lead>The same framework for oil, gas, energy and utilities: SAP IS-Oil and IS-U (simulated) plus operational sources such as historians, LDAR, CTRM, satellite and CEMS emissions, partner portals and smart meters.</p>
+    <div class=grid>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-hydrocarbon-accounting-public/" target=_blank rel=noopener><img src="img/mfg-hydrocarbon-accounting-public.jpg" alt="Hydrocarbon Accounting 360 screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-hydrocarbon-accounting-public/" target=_blank rel=noopener>Hydrocarbon Accounting 360</a></h3>
+          <p>From the wellhead to the owner check: production volumes, valuation and realized prices, royalties and owner distribution, lease operating expense, netbacks and volume-to-revenue reconciliation.</p>
+          <p class=pages><b>13 pages:</b> Ask Cortex · Executive Dashboard · Production · Revenue &amp; Royalties · Netbacks · Lease Operating Expense · Division Orders · Volume-to-Revenue Recon · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>IS-Oil</span><span class=tag>Land &amp; field tickets</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-hydrocarbon-accounting-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-asset-integrity-public/" target=_blank rel=noopener><img src="img/mfg-asset-integrity-public.jpg" alt="Asset Integrity &amp; Reliability screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-asset-integrity-public/" target=_blank rel=noopener>Asset Integrity &amp; Reliability</a></h3>
+          <p>Which critical assets will fail or leak next: SAP PM plus process historian, inspections and LDAR, with an asset risk score, deferred production, work order backlog and methane.</p>
+          <p class=pages><b>13 pages:</b> Ask Cortex · Executive Dashboard · Asset Risk · Work Orders &amp; Backlog · Failure Modes · Sensor Trends · Inspections · Methane &amp; LDAR · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>Historian</span><span class=tag>LDAR</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-asset-integrity-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-downstream-margin-public/" target=_blank rel=noopener><img src="img/mfg-downstream-margin-public.jpg" alt="Downstream Margin screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-downstream-margin-public/" target=_blank rel=noopener>Downstream Margin</a></h3>
+          <p>Terminal-to-rack margin: nominations vs receipts, QCI gains and losses, exchange imbalances, rack price vs benchmark and trading positions from a CTRM.</p>
+          <p class=pages><b>13 pages:</b> Ask Cortex · Executive Dashboard · Margin Waterfall · Inventory &amp; Gains/Losses · Rack Pricing · Exchanges · Trading Position · Source Coverage · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>IS-Oil</span><span class=tag>CTRM</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-downstream-margin-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-emissions-mrv-public/" target=_blank rel=noopener><img src="img/mfg-emissions-mrv-public.jpg" alt="Emissions MRV &amp; Methane Intelligence screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-emissions-mrv-public/" target=_blank rel=noopener>Emissions MRV &amp; Methane Intelligence</a></h3>
+          <p>What did we emit and how does measured methane compare with what we report: SAP EHS estimates plus CEMS and satellite plume detections, leak repair and regulatory cost.</p>
+          <p class=pages><b>13 pages:</b> Ask Cortex · Executive Dashboard · Emissions Inventory · Measured vs Reported · Methane Intensity · Leak Repair · Regulatory Cost · Source Coverage · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>CEMS</span><span class=tag>Satellite</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-emissions-mrv-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-jv-partner-exchange-public/" target=_blank rel=noopener><img src="img/mfg-jv-partner-exchange-public.jpg" alt="JV Partner Data Exchange screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-jv-partner-exchange-public/" target=_blank rel=noopener>JV Partner Data Exchange</a></h3>
+          <p>What each joint-venture partner owes, what they dispute and how to share it securely: JIB billing, cash calls, AFEs, disputes and a per-partner secure share.</p>
+          <p class=pages><b>13 pages:</b> Ask Cortex · Executive Dashboard · Ventures · JIB Billing · Cash Calls · AFEs · Partner Disputes &amp; Audit · Partner Sharing · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>Partner portal</span><span class=tag>Secure share</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-jv-partner-exchange-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-utilities-m2c-public/" target=_blank rel=noopener><img src="img/mfg-utilities-m2c-public.jpg" alt="Utilities Meter-to-Cash screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-utilities-m2c-public/" target=_blank rel=noopener>Utilities Meter-to-Cash</a></h3>
+          <p>The seven-stage meter-to-cash cycle on SAP IS-U: meter reading, VEE, rate calculation, bill generation and delivery, payment collection and exceptions, with ten KPIs against industry benchmarks.</p>
+          <p class=pages><b>16 pages:</b> Ask Cortex · Meter-to-Cash Cockpit · 1 · Meter Reading · 2 · Validation (VEE) · 3 · Rate Calculation · 4 · Bill Generation · 5 · Bill Delivery · 6 · Payment Collection · 7 · Exceptions &amp; Collections · Cycle Times · Source Coverage · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>Any SAP</span><span class=tag>IS-U</span><span class=tag>AMI</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-utilities-m2c-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
         </div>
       </article>
     </div>
@@ -160,6 +226,6 @@
   <p class=note>All data in these demos is synthetic or representative; company, customer and supplier names are fictional.
   Each public site is a read-only static snapshot of an application that runs live on Snowflake.</p>
 </main>
-<footer><div class=wrap>Dave Freriks · Snowflake · <a href="https://github.com/sfc-gh-dfreriks">github.com/sfc-gh-dfreriks</a> · updated 03 November 2026</div></footer>
+<footer><div class=wrap>Dave Freriks · Snowflake · <a href="https://github.com/sfc-gh-dfreriks">github.com/sfc-gh-dfreriks</a> · updated 11 November 2026</div></footer>
 </body>
 </html>

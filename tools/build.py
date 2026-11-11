@@ -25,6 +25,9 @@ SECTIONS = [
     ("mfg", "Manufacturing use cases",
      "Portable apps on the mfg-use-cases framework: any SAP (ECC, S/4HANA, BW or BDC) plus non-SAP sources, "
      "spec-generated dbt adapters, gold dynamic tables, a semantic view and a Cortex Agent."),
+    ("oge", "Oil, Gas & Energy use cases",
+     "The same framework for oil, gas, energy and utilities: SAP IS-Oil and IS-U (simulated) plus operational sources such as "
+     "historians, LDAR, CTRM, satellite and CEMS emissions, partner portals and smart meters."),
     ("explore", "Ontologies and explorers",
      "Browse the SAP BDC catalog and the knowledge graphs that tie the 360 apps together."),
 ]
@@ -57,6 +60,34 @@ DEMOS = [
      "One spend and supplier-risk view across two SAP instances and acquired Oracle EBS, Dynamics 365, NetSuite and "
      "Coupa: supplier golden record, price variance by plant, risk and a supplier optimization model.",
      ["Any SAP", "Non-SAP ERPs", "dbt", "Cortex"], "mfg-use-cases"),
+    ("mfg", "mfg-procure-to-pay-public", "Procure to Pay",
+     "Full procure-to-pay cycle across SAP and non-SAP sources: guided buying, sourcing events, POs, supplier "
+     "confirmations, goods receipt, invoice 3-way match, AP open items and payment runs with discount capture.",
+     ["Any SAP", "Non-SAP sources", "dbt", "Cortex"], "mfg-use-cases"),
+    ("oge", "mfg-hydrocarbon-accounting-public", "Hydrocarbon Accounting 360",
+     "From the wellhead to the owner check: production volumes, valuation and realized prices, royalties and owner "
+     "distribution, lease operating expense, netbacks and volume-to-revenue reconciliation.",
+     ["Any SAP", "IS-Oil", "Land & field tickets", "Cortex"], "mfg-use-cases"),
+    ("oge", "mfg-asset-integrity-public", "Asset Integrity & Reliability",
+     "Which critical assets will fail or leak next: SAP PM plus process historian, inspections and LDAR, with an "
+     "asset risk score, deferred production, work order backlog and methane.",
+     ["Any SAP", "Historian", "LDAR", "Cortex"], "mfg-use-cases"),
+    ("oge", "mfg-downstream-margin-public", "Downstream Margin",
+     "Terminal-to-rack margin: nominations vs receipts, QCI gains and losses, exchange imbalances, rack price vs "
+     "benchmark and trading positions from a CTRM.",
+     ["Any SAP", "IS-Oil", "CTRM", "Cortex"], "mfg-use-cases"),
+    ("oge", "mfg-emissions-mrv-public", "Emissions MRV & Methane Intelligence",
+     "What did we emit and how does measured methane compare with what we report: SAP EHS estimates plus CEMS and "
+     "satellite plume detections, leak repair and regulatory cost.",
+     ["Any SAP", "CEMS", "Satellite", "Cortex"], "mfg-use-cases"),
+    ("oge", "mfg-jv-partner-exchange-public", "JV Partner Data Exchange",
+     "What each joint-venture partner owes, what they dispute and how to share it securely: JIB billing, cash calls, "
+     "AFEs, disputes and a per-partner secure share.",
+     ["Any SAP", "Partner portal", "Secure share", "Cortex"], "mfg-use-cases"),
+    ("oge", "mfg-utilities-m2c-public", "Utilities Meter-to-Cash",
+     "The seven-stage meter-to-cash cycle on SAP IS-U: meter reading, VEE, rate calculation, bill generation and "
+     "delivery, payment collection and exceptions, with ten KPIs against industry benchmarks.",
+     ["Any SAP", "IS-U", "AMI", "Cortex"], "mfg-use-cases"),
     ("explore", "enterprise-ontology", "Enterprise Ontology",
      "The master ontology across six SAP BDC 360 apps on Snowflake: the business entities they share and the "
      "graph that links them.", ["Ontology", "Knowledge graph"], "enterprise-ontology"),
@@ -129,7 +160,7 @@ def page():
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width, initial-scale=1">
 <title>SAP + Snowflake demos · Dave Freriks</title>
-<meta name=description content="Public SAP and Snowflake demo applications: SAP BDC 360 apps, manufacturing use cases and ontology explorers.">
+<meta name=description content="Public SAP and Snowflake demo applications: SAP BDC 360 apps, manufacturing and oil, gas and energy use cases, and ontology explorers.">
 <link rel=icon href="img/snowflake_logo.svg">
 <link rel=stylesheet href="style.css">
 </head>
@@ -138,8 +169,8 @@ def page():
   <div class=wrap>
     <div class=brand><img src="img/snowflake_logo.svg" alt="Snowflake" class=logo><span>SAP + Snowflake demos</span></div>
     <h1>Public demo applications</h1>
-    <p>Working demos of SAP data on Snowflake: SAP Business Data Cloud 360 apps, portable manufacturing use cases and
-    catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
+    <p>Working demos of SAP data on Snowflake: SAP Business Data Cloud 360 apps, portable manufacturing and oil, gas and
+    energy use cases, and catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
     <nav>{nav}</nav>
   </div>
 </header>
