@@ -67,6 +67,10 @@ DEMOS = [
      "Full procure-to-pay cycle across SAP and non-SAP sources: guided buying, sourcing events, POs, supplier "
      "confirmations, goods receipt, invoice 3-way match, AP open items and payment runs with discount capture.",
      ["Any SAP", "Non-SAP sources", "dbt", "Cortex"], "mfg-use-cases"),
+    ("mfg", "mfg-supply-chain-enterprise-public", "Supply Chain Enterprise",
+     "Plan, make and deliver across SAP ECC and S/4HANA together: demand and S&OP, MRP and capacity, inventory, "
+     "production and asset health, digital thread, suppliers, OTIF, freight, warehouse and cost, with an executive control tower.",
+     ["ECC + S/4HANA", "BDC optional", "Planning, MES, WMS", "Cortex"], "mfg-use-cases"),
     ("oge", "mfg-hydrocarbon-accounting-public", "Hydrocarbon Accounting 360",
      "From the wellhead to the owner check: production volumes, valuation and realized prices, royalties and owner "
      "distribution, lease operating expense, netbacks and volume-to-revenue reconciliation.",

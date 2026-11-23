@@ -261,5 +261,30 @@
   "Use Cases / Insight Apps",
   "Correlation",
   "Coverage & Scorecard"
+ ],
+ "mfg-supply-chain-enterprise-public": [
+  "Ask Cortex",
+  "Executive Control Tower",
+  "Demand & S&OP",
+  "Supply Planning & MRP",
+  "Capacity",
+  "Inventory Optimization",
+  "Production & OEE",
+  "Asset Health",
+  "BOM & Engineering Change",
+  "Digital Thread",
+  "Inbound Supply & Suppliers",
+  "Supplier Quality",
+  "Order Fulfillment & OTIF",
+  "Logistics & Freight",
+  "Warehouse",
+  "Cost Variance",
+  "Material Master Quality",
+  "Supply Network",
+  "Data Sources",
+  "Field Mapping",
+  "SAP Metadata",
+  "Sources & Lineage (dbt)",
+  "Pipeline in 3D"
  ]
 }

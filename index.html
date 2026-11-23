@@ -17,7 +17,7 @@
     energy use cases, and catalog explorers. Every demo runs in the browser with no login, on synthetic or representative data.</p>
   </div>
 </header>
-<nav class=tabs aria-label="Demo groups"><div class=wrap><a class=tab href="#all" data-tab="all">All<span>18</span></a><a class=tab href="#sap360" data-tab="sap360">SAP BDC 360<span>6</span></a><a class=tab href="#mfg" data-tab="mfg">Manufacturing<span>3</span></a><a class=tab href="#oge" data-tab="oge">Oil, Gas &amp; Energy<span>6</span></a><a class=tab href="#explore" data-tab="explore">Ontologies &amp; explorers<span>3</span></a></div></nav>
+<nav class=tabs aria-label="Demo groups"><div class=wrap><a class=tab href="#all" data-tab="all">All<span>19</span></a><a class=tab href="#sap360" data-tab="sap360">SAP BDC 360<span>6</span></a><a class=tab href="#mfg" data-tab="mfg">Manufacturing<span>4</span></a><a class=tab href="#oge" data-tab="oge">Oil, Gas &amp; Energy<span>6</span></a><a class=tab href="#explore" data-tab="explore">Ontologies &amp; explorers<span>3</span></a></div></nav>
 <main class=wrap>
   <section id=sap360>
     <h2>SAP Business Data Cloud 360 apps</h2>
@@ -117,6 +117,16 @@
           <p class=pages><b>15 pages:</b> Ask Cortex · Executive Dashboard · Requisitions &amp; Sourcing · POs &amp; Contract Compliance · Supplier Delivery · Invoices &amp; 3-Way Match · Exceptions &amp; Holds · Payables &amp; DPO · Payments &amp; Discounts · Supplier 360 &amp; Risk · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
           <div class=tags><span class=tag>Any SAP</span><span class=tag>Non-SAP sources</span><span class=tag>dbt</span><span class=tag>Cortex</span></div>
           <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-procure-to-pay-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
+        </div>
+      </article>
+      <article class=card>
+        <a class=thumb href="https://sfc-gh-dfreriks.github.io/mfg-supply-chain-enterprise-public/" target=_blank rel=noopener><img src="img/mfg-supply-chain-enterprise-public.jpg" alt="Supply Chain Enterprise screenshot" loading=lazy></a>
+        <div class=body>
+          <h3><a href="https://sfc-gh-dfreriks.github.io/mfg-supply-chain-enterprise-public/" target=_blank rel=noopener>Supply Chain Enterprise</a></h3>
+          <p>Plan, make and deliver across SAP ECC and S/4HANA together: demand and S&amp;OP, MRP and capacity, inventory, production and asset health, digital thread, suppliers, OTIF, freight, warehouse and cost, with an executive control tower.</p>
+          <p class=pages><b>23 pages:</b> Ask Cortex · Executive Control Tower · Demand &amp; S&amp;OP · Supply Planning &amp; MRP · Capacity · Inventory Optimization · Production &amp; OEE · Asset Health · BOM &amp; Engineering Change · Digital Thread · Inbound Supply &amp; Suppliers · Supplier Quality · Order Fulfillment &amp; OTIF · Logistics &amp; Freight · Warehouse · Cost Variance · Material Master Quality · Supply Network · Data Sources · Field Mapping · SAP Metadata · Sources &amp; Lineage (dbt) · Pipeline in 3D</p>
+          <div class=tags><span class=tag>ECC + S/4HANA</span><span class=tag>BDC optional</span><span class=tag>Planning, MES, WMS</span><span class=tag>Cortex</span></div>
+          <div class=links><a class=btn href="https://sfc-gh-dfreriks.github.io/mfg-supply-chain-enterprise-public/" target=_blank rel=noopener>Open demo</a><a class=src href="https://github.com/sfc-gh-dfreriks/mfg-use-cases" target=_blank rel=noopener>Source</a></div>
         </div>
       </article>
     </div>
@@ -237,6 +247,6 @@ function show(key) {
 tabs.forEach((t) => t.addEventListener("click", (e) => { e.preventDefault(); history.replaceState(null, "", "#" + t.dataset.tab); show(t.dataset.tab); }));
 show(location.hash.slice(1));
 </script>
-<footer><div class=wrap>Dave Freriks · Snowflake · <a href="https://github.com/sfc-gh-dfreriks">github.com/sfc-gh-dfreriks</a> · updated 11 November 2026</div></footer>
+<footer><div class=wrap>Dave Freriks · Snowflake · <a href="https://github.com/sfc-gh-dfreriks">github.com/sfc-gh-dfreriks</a> · updated 23 November 2026</div></footer>
 </body>
 </html>
